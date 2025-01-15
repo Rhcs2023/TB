@@ -560,7 +560,7 @@ if 'oracion_traducida' not in st.session_state:
     st.session_state.oracion_traducida = ""
 
 # Opción para introducir texto
-oracion_usuario = st.text_area("Introduce una oración, los pronombres posesivos van despues del verbo; Ejemplo: Padre mi va al centro.", height=200)
+oracion_usuario = st.text_area("Introduce una oración, los pronombres posesivos van despues del verbo; Ejemplo: Padre mi va al centro.", height=100)
 
 # Botón para ejecutar la traducción
 if st.button("Traducir"):

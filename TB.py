@@ -567,6 +567,7 @@ if st.button("Traducir"):
     if oracion_usuario:
         oracion_traducida = traducir_oracion(oracion_usuario)
         st.session_state.oracion_traducida = oracion_traducida
+        st.write(f"Traducción: {oracion_traducida}")
         audio_bytes = reproducir_audio(oracion_traducida, 'es')  # Usando español por defecto
         st.audio(audio_bytes, format='audio/mp3')
     else:
